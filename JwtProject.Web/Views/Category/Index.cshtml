@@ -1,0 +1,25 @@
+﻿@using JwtProject.Web.DTOs.Categories
+@model List<ResultCategoryDto>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Kategoriler</h3>
+
+
+<ul>
+
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.Name
+        </li>
+
+    }
+
+
+
+</ul>
+
+
+

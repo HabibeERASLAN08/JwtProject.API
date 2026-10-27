@@ -1,0 +1,38 @@
+﻿@using JwtProject.Web.DTOs.UserDtos
+@model LoginUserDto
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="card col-8">
+            <h3 class="card-title text-center">Giriş Formu</h3>
+
+            <form class="card-body" method="post">
+                <label>Email veya Kullanıcı Adı</label>
+                <input type="text" asp-for="UserNameOrEmail" class="form-control" required/>
+                <br/>
+                <label>Şifre</label>
+                <input type="password" asp-for="Password" class="form-control" required />
+                <br />
+                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                <button class="btn btn-dark">Giriş Yap</button>
+            </form>
+
+
+        </div>
+    </div>
+</body>
+</html>

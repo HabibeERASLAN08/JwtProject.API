@@ -4,6 +4,6 @@ namespace JwtProject.API.Services
 {
     public interface IJwtService
     {
-         Task<string> GenerateToken(AppUser user);
+         Task<string> GenerateTokenAsync(AppUser user);
     }
 }
