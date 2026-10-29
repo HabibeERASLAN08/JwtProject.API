@@ -20,7 +20,7 @@ namespace JwtProject.Web.Controllers
                 ModelState.AddModelError("", "Email/Kullanıcı adı veya şifre hatalı.");
                 return View(loginUserDto);
             }
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index","Category");
         }
     }
 }
